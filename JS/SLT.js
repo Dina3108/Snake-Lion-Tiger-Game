@@ -162,17 +162,17 @@ function winner_vid(winner) {
   let a2 = document.querySelector(".video2-div");
   if (winner === "Snake") {
     a2.innerHTML = `
-    <video class="video-edit" controls>
+    <video class="video-edit" controls autoplay>
       <source src="Files/Snake.mp4" type="video/mp4" />
     </video>`;
   } else if (winner === "Lion") {
     a2.innerHTML = `
-    <video class="video-edit" controls>
+    <video class="video-edit" controls autoplay>
       <source src="Files/Lion.mp4" type="video/mp4"/>
     </video>`;
   } else if (winner === "Tiger") {
     a2.innerHTML = `
-    <video class="video-edit" controls>
+    <video class="video-edit" controls autoplay>
       <source src="Files/Tiger.mp4" type="video/mp4" />
     </video>
   `;
