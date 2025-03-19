@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="Files/tenor.gif" />
+    <link rel="stylesheet" href="CSS/SLT.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake vs Lion vs Tiger</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&family=Bangers&family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Bilbo+Swash+Caps&family=Finger+Paint&family=Handlee&family=Jockey+One&family=Kaushan+Script&family=Kavoon&family=Kite+One&family=Luckiest+Guy&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=New+Amsterdam&family=Patrick+Hand+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Riot&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Doodle+Shadow&family=Rubik+Vinyl&family=Saira:ital,wght@0,100..900;1,100..900&family=Salsa&family=Squada+One&family=Square+Peg&family=Tangerine:wght@400;700&family=Vibur&family=Waiting+for+the+Sunrise&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&family=Bangers&family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Bilbo+Swash+Caps&family=Finger+Paint&family=Handlee&family=Jockey+One&family=Kaushan+Script&family=Kavoon&family=Kite+One&family=Luckiest+Guy&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=New+Amsterdam&family=Pangolin&family=Patrick+Hand+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Riot&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Doodle+Shadow&family=Rubik+Vinyl&family=Saira:ital,wght@0,100..900;1,100..900&family=Salsa&family=Squada+One&family=Square+Peg&family=Tangerine:wght@400;700&family=Vibur&family=Waiting+for+the+Sunrise&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <center>
+      <p class="page-title">Snake vs Lion vs Tiger</p>
+    </center>
+    <center>
+      <div class="rules-div">
+        <p class="rules-title">INSTRUCTIONS:</p>
+        <p class="rules-sub-title">
+          * Your Well Familiar Game like Rock Paper and Scissors
+        </p>
+        <p class="rules-sub-title">
+          * Choose Your One, Oppenent will Choose One
+        </p>
+        <p class="rules-sub-title">
+          * Based on the Rules Below,Scores will be Calculated
+        </p>
+      </div>
+      <div class="rules-div">
+        <p class="rules-title">RULES:</p>
+        <p class="rules-sub-title">
+          * Snake beats Tiger: Snake Bites tiger, Snake Wins
+        </p>
+        <p class="rules-sub-title">
+          * Tiger beats Lion: Tiger fights Lion, Tiger Wins
+        </p>
+        <p class="rules-sub-title">
+          * Lion beats Snake: Lion steps on Snake, Lion wins
+        </p>
+      </div>
+      <div class="buttons-select-div">
+        <button
+          class="snake-button select-button"
+          onclick="
+           playGame('Snake');"
+        >
+          🐍SNAKE
+        </button>
+        <button
+          class="lion-button select-button"
+          onclick="
+           playGame('Lion');"
+        >
+          🦁LION
+        </button>
+        <button
+          class="tiger-button select-button"
+          onclick="
+           playGame('Tiger');"
+        >
+          🐅TIGER
+        </button>
+      </div>
+      <p class="js-result"></p>
+      <p class="choice-p">WINNER RELEASED HIS:</p>
+      <div class="video2-div"></div>
+      <p class="js-score"></p>
+      <p class="js-choice"></p>
+      <button
+        onclick="
+          score.wins=0;
+          score.losses=0;
+          score.ties=0;
+        localStorage.removeItem('check');
+        updateScore();
+          document.querySelector('.js-result').innerHTML = ` `;
+            document.querySelector('.js-choice').innerHTML = ` `;
+        //while removing the item in localStorage it will store the item as null without any data
+        //so at bottom after getting Item if it is null means initializing the object again with zero
+        "
+        class="select-button"
+      >
+        Reset Score
+      </button>
+      <button
+        onclick="auto_play();
+      text_to_stop_autoplay();
+      "
+        class="autoplay-button select-button"
+      >
+        Auto Play
+      </button>
+    </center>
+    <script src="JS/SLT.js"></script>
+  </body>
+</html>
