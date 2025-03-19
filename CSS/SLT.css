@@ -111,7 +111,7 @@ body {
 }
 @media only screen and (min-width: 220px) and (max-width: 740px) and (orientation: portrait) {
   body {
-    background-image: url(Files/tenor.gif);
+    background-image: url(tenor.gif);
     padding-bottom: 75px;
   }
   .page-title {
